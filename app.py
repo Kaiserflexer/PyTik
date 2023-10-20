@@ -12,7 +12,7 @@ load_dotenv()
 
 api = Scraper()
 token = os.getenv("TOKEN")
-BOT_USERNAME = '@py_tt_save'
+BOT_USERNAME = '@py_tt_save_bot'
 
 async def hybrid_parsing(url: str) -> dict:
     try:
