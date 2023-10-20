@@ -14,6 +14,15 @@ api = Scraper()
 token = os.getenv("TOKEN")
 BOT_USERNAME = '@py_tt_save_bot'
 
+async def start_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    await update.message.reply_text('This is test app')
+
+async def help_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    await update.message.reply_text('Please type something so i can respond')
+
+async def custom_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    await update.message.reply_text('This is custom command')
+
 async def hybrid_parsing(url: str) -> dict:
     try:
         # Hybrid parsing(Douyin/TikTok URL)
@@ -107,5 +116,3 @@ if __name__ == '__main__':
     # Polls the bot
     print('Polling...')
     app.run_polling(poll_interval=3)
-
-
