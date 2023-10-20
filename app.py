@@ -15,7 +15,7 @@ token = os.getenv("TOKEN")
 BOT_USERNAME = '@py_tt_save_bot'
 
 async def start_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    await update.message.reply_text('This is test app')
+    await update.message.reply_text('The TikTok Video Download Bot for Telegram is a handy tool that allows users to fetch videos from TikTok and instantly share them in chats. Paste a link to the TikTok video below:')
 
 async def help_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text('Please type something so i can respond')
